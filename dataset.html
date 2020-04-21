@@ -38,7 +38,7 @@
       <div class="navbar-brand">
         <!-- TODO: Change link to repository homepage if needed -->
         <!-- TODO: Change which navbar-item is-active if needed -->
-        <a class="navbar-item is-active" href="index.html">
+        <a class="navbar-item" href="index.html">
           <span class="icon"><i class="fas fa-home"></i></span>
           <span>Home</span>
         </a>
@@ -53,7 +53,7 @@
       <div id="main-menu" class="navbar-menu has-text-weight-medium">
         <!-- Left navbar items -->
         <div class="navbar-start">
-          <a class="navbar-item" href="dataset.html" title="Data">
+          <a class="navbar-item is-active" href="dataset.html" title="Data">
             <span class="icon"><i class="fas fa-table"></i></span>
             <span>Data</span>
           </a>
@@ -86,13 +86,31 @@
       <div class="content">
         <h1 class="title">
           <!-- TODO: Change page title -->
-         Trees of San Francisco
+          Dataset
         </h1>
+        <p>For this project, I've visualized <a href="https://datasf.org/">Data SF</a>'s <a href="https://data.sfgov.org/City-Infrastructure/Street-Tree-List/tkzw-k3nq">Street Tree List</a> dataset.</p>
+        <p>Here's the license to the dataset by <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Data Commons</a></p>
+        <p>I accesed the dataset in April of 2020.</p>
+        <h2>What I Kept</h2>
+        <p>The original dataset contains 194K rows and 18 columns. I decided to only keep the trees which have a latitude and longitude associated with them, I also plan on doing some cleanup and grouping by species to make the data easier to analyze on a map. I might also decide to reduce it even further since after all that I still have about 60K trees in hand.</p>
+
+        <h2>The columns. What do they mean?</h2>
+        <p>Currently, for my prototypes I used these columns: </p>
+
+        <ol>
+          <li><strong>qCaretaker:</strong> The entity in charge of taking care of the tree (Department of Public Works, private, etc...).</li>
+
+          <li><strong> PlantDate:</strong>The date the tree was planted, precise to the hour of day in some cases.</li>
+
+          <li><strong> qSpecies:</strong>A surprisingly precise field about each trees species. I really need help grouping together similar species because there are SO MANY.</li>
+
+          <li><strong> Latitude:</strong>The latitude of the trees location.</li>
+
+          <li><strong> Longitude:</strong>The longitude of the trees location.</li>
 
 
-        <p>For this project I've decided to explore the trees of San Francisco since 1955. I think this would be a cool topic since San Francisco changed so much in the 20th century because of the booming tech industry. How did our advances in technology impact our landscapes? Did gentrification impact the way we shape our city with trees?</p>
-        <img src="img/presidio.jpeg" alt="">
-        <p>Photo by: <a href="about.html">Nedim Azar</a></p>
+
+        </ol>
 
       </div>
       <!-- End page content -->
