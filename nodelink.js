@@ -180,7 +180,9 @@ function setupEvents(g, selection) {
         .attr('y', y)
         .attr('dy', -dy - 4) // shift upward above circle
         .attr('text-anchor', 'middle') // anchor in the middle
-        .attr('id', 'tooltip');
+        .attr('id', 'tooltip')
+        .attr('fill', 'red')
+        .attr('background-color', 'white');
 
       // get bounding box for the text
       let tbox = tooltip.node().getBBox();

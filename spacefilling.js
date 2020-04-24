@@ -56,7 +56,7 @@ function createSpace(data_csv) {
     });
 
 
-    let layout = d3.treemap().padding(5).size([width - 2 * pad, height - 2 * pad]);
+    let layout = d3.partition().padding(5).size([width - 2 * pad, height - 2 * pad]);
 
     layout(data);
 
