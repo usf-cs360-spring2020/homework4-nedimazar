@@ -59,8 +59,8 @@
           </a>
 
           <a class="navbar-item" href="prototypes.html" title="Data">
-            <span class="icon"><i class="fas fa-lightbulb"></i></span>
-            <span>Prototypes</span>
+            <span class="icon"><i class="fas fa-eye"></i></span>
+            <span>Visualizations</span>
           </a>
 
 
@@ -88,25 +88,25 @@
           <!-- TODO: Change page title -->
           Dataset
         </h1>
-        <p>For this project, I've visualized <a href="https://datasf.org/">Data SF</a>'s <a href="https://data.sfgov.org/City-Infrastructure/Street-Tree-List/tkzw-k3nq">Street Tree List</a> dataset.</p>
+        <p>For this homework, I've visualized <a href="https://datasf.org/">Data SF</a>'s <a href="https://data.sfgov.org/Public-Safety/Fire-Department-Calls-for-Service/nuek-vuh3/data">Fire Department Calls for Service</a> dataset.</p>
         <p>Here's the license to the dataset by <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Data Commons</a></p>
         <p>I accesed the dataset in April of 2020.</p>
         <h2>What I Kept</h2>
-        <p>The original dataset contains 194K rows and 18 columns. I decided to only keep the trees which have a latitude and longitude associated with them, I also plan on doing some cleanup and grouping by species to make the data easier to analyze on a map. I might also decide to reduce it even further since after all that I still have about 60K trees in hand.</p>
+        <p>The original dataset contains 5.26M rows and 34 columns. I have restricted myself to only calls made in January of 2020</p>
 
         <h2>The columns. What do they mean?</h2>
-        <p>Currently, for my prototypes I used these columns: </p>
+        <p>Here are the columns I used for my hierarchy: </p>
 
         <ol>
-          <li><strong>qCaretaker:</strong> The entity in charge of taking care of the tree (Department of Public Works, private, etc...).</li>
+          <li><strong> City:</strong> The city where the call was made (All of them are San Francisco in this case).</li>
 
-          <li><strong> PlantDate:</strong>The date the tree was planted, precise to the hour of day in some cases.</li>
+          <li><strong> Zipcode of Incident:</strong> The zipcode where the incident happened.</li>
 
-          <li><strong> qSpecies:</strong>A surprisingly precise field about each trees species. I really need help grouping together similar species because there are SO MANY.</li>
+          <li><strong> Battalion:</strong> The battalion that took care of the incident.</li>
 
-          <li><strong> Latitude:</strong>The latitude of the trees location.</li>
+          <li><strong> Priority:</strong> The priority assigned to the incident.</li>
 
-          <li><strong> Longitude:</strong>The longitude of the trees location.</li>
+
 
 
 
