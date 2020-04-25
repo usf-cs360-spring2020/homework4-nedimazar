@@ -13,7 +13,6 @@ function createSpace(data_csv) {
   let width = 960;
   let height = 500;
 
- //translate(width / 2, (height / 2) ))
 
   let nested_data = d3.nest()
     .key(function(d) {
@@ -44,7 +43,6 @@ function createSpace(data_csv) {
 
 
   let data = d3.hierarchy(nested_data[0], function(d) {
-      //console.log("values", d.values);
       return d.values;
     });
 
@@ -108,7 +106,7 @@ function createSpace(data_csv) {
          .style("text-anchor", "right")
          .style("font-weight", 600)
          .style("font-size", "14px")
-         .text("Levels of SFFD Structure");
+         .text("Color Breakdown");
 
          setupEvents(plot, rects);
 

@@ -100,7 +100,7 @@ function createNodeLink(data_csv) {
        .style("text-anchor", "middle")
        .style("font-weight", 600)
        .style("font-size", "14px")
-       .text("Levels of SFFD Structure");
+       .text("Color Breakdown");
 
 
 }
